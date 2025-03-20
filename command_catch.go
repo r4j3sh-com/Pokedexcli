@@ -30,6 +30,7 @@ func commandCatch(cfg *config, args ...string) error {
 	//fmt.Printf("Catch rate: %d, Random number: %d\n", catchRate, randomNum)
 
 	if randomNum <= catchRate {
+		cfg.caughtPokemon[pokemon.Name] = pokemon
 		fmt.Printf("%s was caught!\n", pokemon.Name)
 	} else {
 		fmt.Printf("%s escaped!\n", pokemon.Name)
