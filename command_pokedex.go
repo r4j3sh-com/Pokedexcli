@@ -11,9 +11,9 @@ func commandPokedex(cfg *config, args ...string) error {
 		return errors.New("you haven't caught any Pokémon yet")
 	}
 
-	fmt.Println("Your caught Pokémon:")
-	for name, pokemon := range cfg.caughtPokemon {
-		fmt.Printf("- %s (Level %d)\n", name, pokemon.BaseExperience/10)
+	fmt.Println("Your Pokedex:")
+	for name, _ := range cfg.caughtPokemon {
+		fmt.Printf("- %s\n", name)
 	}
 
 	return nil
