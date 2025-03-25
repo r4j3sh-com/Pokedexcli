@@ -17,7 +17,7 @@ PokédexCLI is a command-line interface Pokédex application written in Go. It a
 To install PokédexCLI, make sure you have Go installed on your system, then run:
 
 ```go
-go get github.com/yourusername/pokedexcli
+go get github.com/r4j3sh-com/pokedexcli
 ```
 
 ## Usage
